@@ -1,7 +1,7 @@
 # Task 1 
 
 ## High-Level Flow Diagram
-  ![alt text](image.png)
+  ![image](https://github.com/user-attachments/assets/c2708b23-12b3-42e9-b08a-f6a82fa0f25d)
 ## Technologies Used
  1. Python - Development using Flask.
  2. AWS - Cloud infrastructure using EKS, ECR, and VPC.
