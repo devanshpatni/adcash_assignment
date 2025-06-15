@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: prom-service-discovery
+  namespace: monitoring
+  labels:
+    release: monitoring
+spec:
+  selector:
+    matchLabels:                    # matching labels for webapp service
+      mysvc: pythonsvc
+  namespaceSelector:
+    matchNames:
+      - default                     # nammespace for webapp service
+  endpoints:
+    - port: webappport              # port opened on the webapp service
+      path: /metrics
+      interval: 10s
