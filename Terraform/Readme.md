@@ -3,7 +3,9 @@
 
 
 #### Initializing the project and downloading the modules and providers
-``` terraform init ```
+``` 
+terraform init
+```
 
 #### To validate the syntax and formatting 
 ```
@@ -18,4 +20,6 @@ terraform plan
 ```
 
 #### To apply the configuration and changes
-``` terraform apply ```
+``` 
+terraform apply
+```
