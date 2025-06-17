@@ -1,14 +1,15 @@
 # Task 1 
 
 ## High-Level Flow Diagram
-  ![image](https://github.com/user-attachments/assets/c2708b23-12b3-42e9-b08a-f6a82fa0f25d)
+ ![image](https://github.com/user-attachments/assets/6f4f6159-5393-401f-b254-7dc100a652bc)
 ## Technologies Used
  1. Python - Development using Flask.
  2. AWS - Cloud infrastructure using EKS, ECR, and VPC.
  3. Terraform -  Infrastructure as Code (IaC) for deploying cloud resources.
  4. Docker - Containerization of the application
  5. Elastic Kubernetes Service (EKS) - Container orchestration and deployment.
- 6. Prometehus and Grafana -  Monitoring, observability, and metrics visualization.
+ 6. Ansible - For autometic resource deployment and server configurations. 
+ 7. Prometehus and Grafana -  Monitoring, observability, and metrics visualization.
 
 ##  Highlights of Each Technology Used.
 
@@ -33,8 +34,14 @@
 - Configured an NGINX Ingress Controller with an external Load Balancer for path-based routing.
 - Set up Prometheus and Grafana within the cluster for monitoring and observability.
 
+### Ansible
+- Used for deploying prometheus server.
+- Configured the protheus server for getting remote metrics from the agent on kubernetes.
+- Congigured Grafana for visualization for metrics.
+  
 ### Prometheus and Grafana
-- Enabled Prometheus service discovery to automatically collect metrics from the application.
+- Enabled Prometheus Agent for service discovery to automatically collect metrics from the application service in EKS.
+- Sending that scraped metrics to the central Prometheus Server.
 - Created a custom Grafana dashboard to display request counts for each endpoint.
 
 ##  Task Access or Additional Notes
