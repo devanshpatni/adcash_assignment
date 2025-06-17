@@ -1,5 +1,4 @@
 controller:
-  serviceAccount: {}    # This can be empty or omitted
   service:
     type: LoadBalancer
     annotations:
