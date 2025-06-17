@@ -35,3 +35,6 @@ chmod 755 ingress-prometheus-installation.sh
 
 #### For service discovery for prometheus to scrape metrics
  ``` kubectl apply -f prom-servicediscovery.yaml ```
+
+#### Note
+Update all missing variable values and file paths according to your specific environment before execution.
