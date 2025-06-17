@@ -8,7 +8,7 @@
 #### For installing NGINX Ingress Controller and Prometheus-Grafana
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm install monitoring prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace -f values-grafana.yaml
+helm install monitoring prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace -f values-prom.yaml
 
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx -f values-ingress.yaml

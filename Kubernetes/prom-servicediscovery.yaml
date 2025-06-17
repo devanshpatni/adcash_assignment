@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: prom-service-discovery
+  namespace: prometheus-agent
+  labels:
+    release: prometheus-agent
+spec:
+  selector:
+    matchLabels:
+      discover: prom               # services having this label will be discovered
+  namespaceSelector:
+    matchNames:
+      - default                    # services in this namespace will be searched 
+  endpoints:
+    - port: webappport
+      path: /metrics
+      interval: 10s
