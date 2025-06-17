@@ -12,4 +12,17 @@ Ansible was used to configure Prometheus and Grafana on a central EC2-based moni
 - requirements.yml → Lists the Ansible collections required to run configuration tasks (e.g., Prometheus and Grafana roles).
 - setup.yml → The main playbook that orchestrates the full setup process end-to-end.
 
-### Basic
+### Commands used for set-up
+
+#### Downloading the requiremnets
+```
+ansible-galaxy collection install -r requirements.yml
+```
+
+#### Running the Setup
+```
+ansible-playbook setup.yml
+```
+
+#### Note
+Update all missing variable values and file paths according to your specific environment before execution. 
