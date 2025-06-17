@@ -32,3 +32,7 @@ terraform plan
 ``` 
 terraform apply
 ```
+
+#### Note
+Update all missing variable values and file paths according to your specific environment before execution.
+
