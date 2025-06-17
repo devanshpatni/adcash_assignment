@@ -7,6 +7,6 @@ grafana:
 prometheus:
   prometheusSpec:
     remoteWrite:
-      - url: "http://172.31.33.202:9090/api/v1/write"
+      - url: "http://<Mention Prom Server Private IP>:9090/api/v1/write"
     serviceMonitorSelectorNilUsesHelmValues: false
     podMonitorSelectorNilUsesHelmValues: false
