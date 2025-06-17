@@ -4,4 +4,5 @@ controller:
     annotations:
       service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
       service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+      service.beta.kubernetes.io/aws-load-balancer-eip-allocations: "eipalloc-07cda9db9244db66b,eipalloc-045ceb56d84b122fb"
       service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: "ip"

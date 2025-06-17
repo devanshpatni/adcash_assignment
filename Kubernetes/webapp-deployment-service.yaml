@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gandalf
-        image: 891377389582.dkr.ecr.ap-south-1.amazonaws.com/myapp:latest        # Image of webapp in ECR
+        image: 891377389582.dkr.ecr.ap-south-1.amazonaws.com/mywebappecr:latest        # Image of webapp in ECR
         ports:
         - containerPort: 80                                                     
         readinessProbe:                                                          # Health Probes

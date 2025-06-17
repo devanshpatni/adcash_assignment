@@ -1,0 +1,18 @@
+kind: Ingress
+metadata:
+  name: mywebappingress-metrics
+  #annotations:
+  #   nginx.ingress.kubernetes.io/whitelist-source-range: "3.6.41.40/32"
+
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /metrics
+            pathType: Prefix
+            backend:
+              service:
+                name: web-app-service
+                port:
+                  number: 80
