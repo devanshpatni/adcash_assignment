@@ -1,0 +1,7 @@
+grafana_security:
+  admin_user: admin
+  admin_password: admin
+
+prometheus_agent_mode: false
+prometheus_config_flags_extra:
+  web.enable-remote-write-receiver: ""

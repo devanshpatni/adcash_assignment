@@ -1,0 +1,9 @@
+- name: Provision EC2
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  roles:
+    - aws_provision
+
+- import_playbook: roles/monitoring_setup/tasks/main.yml
+
