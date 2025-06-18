@@ -6,7 +6,8 @@ To expose the application externally, I set up an NGINX Ingress Controller with 
 Additionally, I deployed a Prometheus Agent on the cluster to scrape metrics from the application and remote write them to a centralized Prometheus server. These metrics are then visualized through a Grafana dashboard, providing real-time monitoring and observability.
 
 ### Basic Flow inside Kubernetes
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/fcf67d38-b5f6-473c-bccf-b7ec9d8b3c43)
+
 
 #### Brief Description of Project Files
 
