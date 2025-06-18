@@ -55,6 +55,6 @@
    ![image](https://github.com/user-attachments/assets/3ae48381-9d60-48a3-98ca-bd7945ea78b3)
 
    
-### Graphana Dashboard is available on - http://65.0.169.46:3000/
+### Graphana Dashboard is available on - http://13.233.164.36:3000/
 ![image](https://github.com/user-attachments/assets/3b4df12c-7697-4e28-9f9f-aa7f2a48b821)
 
