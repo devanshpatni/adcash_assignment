@@ -1,6 +1,6 @@
 grafana_security:
   admin_user: admin
-  admin_password: admin
+  admin_password: <password>
 
 prometheus_agent_mode: false
 prometheus_config_flags_extra:
