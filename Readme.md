@@ -56,5 +56,6 @@
 
    
 ### Graphana Dashboard is available on - http://13.233.164.36:3000/
-![image](https://github.com/user-attachments/assets/3b4df12c-7697-4e28-9f9f-aa7f2a48b821)
+![image](https://github.com/user-attachments/assets/aceef6b5-de67-4d6b-b212-4cfd71c2b039)
+
 
